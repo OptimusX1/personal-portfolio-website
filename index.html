@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+        <title>personal portfolio website</title>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    
+    <body>
+
+ 
+ <div id="header"> 
+ <div class="container">
+       <nav>
+         
+         <img src="images/logo1.png"  class="logo" >
+           <ul>    
+                 <li> <a href="#header">Home</a></li>
+                 <li> <a href="#about">About</a></li>
+                 <li> <a href="#">Services</a></li>
+                 <li> <a href="#portfolio">Portfolio</a></li>
+                 <li> <a href="#contact">Contact</a></li>
+           </ul>        
+        </nav>
+        <div class="header-text">
+              <p>Aspiring SDE..</p>
+              <h1> Hi  I'm  <span>Jagan  Kumar </span><br> from  Bhimavaram....</h1>
+        </div>
+ </div>
+
+  </div>
+
+
+           <!-------about--------->
+  <div id="about">
+     <div  class="container">
+         <div class="row">
+            
+          <div class ="about-col-1">
+            <img src="images/user.png" alt="jagan" >
+          </div>
+          <div class ="about-col-2">
+             <h1 class="sub-title"> About Me</h1>
+            <br> <p>Hi,my name is Jagan Kumar. im studying in BV RAJU College ,B.SC Final Year. <br>  </p>
+             <p> i am From Electronics and Computer Science group , I'm very much about interested</p>
+             <p> about the Web Development and Data Structures and Algorithms , and also i priortise </p>
+             <p>time for reading Philosophical  and Non-Fiction books  and also play Cricket.And i want <br>
+               to learn new stuff from the people regarding technology.And i can speak telugu,english  <br> 
+               And u can contact me anytime. <br>
+            </p>
+               <div class = "tab-titles">
+
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('experience')"> Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+           
+            <div class="tab-contents active-tab " id="skills">
+              <ul>
+                <li><span>DSA</span><br>using Java,C <br></li> 
+                <li><span>Web Development</span><br>using HTML,CSS,JS <br></li>
+                <li><span>Blogging</span><br> in Hashnode <br></li> 
+              </ul>
+           </div>
+           <div class="tab-contents" id="experience"> 
+            <ul>
+              <li><span>portfolio website</span><br>using using HTML,CSS,JS  <br></li>
+              <li><span>website Development</span><br>(NO Code) </li>
+              <li><span>Blogging</span><br> in Hashnode <br></li> 
+            </ul>
+          </div>
+           <div class="tab-contents" id="education" >
+             <ul>
+              <li><span>2021-2024</span><br>B.SC</li> <br>
+              <li><span>2018-2020</span><br>MPC</li><br>
+              <li><span>2017-2018</span><br> SSC</li> <br>
+            </ul>
+         </div>
+         
+          </div>  
+         </div>
+        </div>
+
+        <!-- ------------portfolio------------->
+        <div id="portfolio">
+          <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class= "work-list">
+                
+              <div class="work">
+                <img src="images/work-1.png"> 
+                <div class="layer">
+                   <br> <a href="#" ><h3><div class="blue"> Personal Portfolio website </div></h3></a><br>
+                  <p> The website were build by using pure HTML,CSS,JS..</p> 
+                  
+                </div>
+             </div>
+
+                <div class="work">
+                  <img src="images/work-2.png">
+                  <div class="layer">
+                    <br> <a href="#" ><h3> <div class="blue">Blogging in Hashnode </div></h3></a><br>
+                     <p>Started Writing tech and Coding Blogs. </p> 
+                   
+                 </div>
+                </div>
+
+                <div class="work">
+                  <img src="images/work-3.png">
+                  <div class="layer">
+                    <br> <a href="#" ><h3> <div class="blue">Crypto Trading</div> </h3></a><br>
+                     <p>Started Writing tech and Coding Blogs. </p> 
+                   
+              </div>
+            </div>
+          </div>
+        </div>
+        <br> 
+        <!------------contact------->
+        <div id ="contact">
+        <div class="contact">
+           <div class="container">
+              <div class="row">
+                 <div class="contact-left">
+                      <h1 class="sub-title">Contact-Me</h1>
+                      <br><p>jaganganireddy@gmail.com</p> 
+                      <p>9985574311 </p>
+
+
+
+                      <div class="social-icons">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                         <a href="#" class="fa fa-twitter"></a>
+                         <a href="#" class="fa fa-linkedin"></a>
+                         <a href="#" class="fa fa-youtube"></a>
+                      </div>
+                      
+                     <br> <a href="images/my-cv.pdf" download="" class="btn btn2" >Download Resume</a>
+
+                 </div>
+                 <div class="contact-right">
+                      <form>
+                        <input type="text" name=" Name"  placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message " rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                      </form>
+                </div>
+                      
+              </div>
+           </div>
+           <div class="copyright">
+              <p> copyright © Jagan Kumar. Made by Ganireddy😎.</p>
+           </div>
+        </div>
+      </div>
+    <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+     function opentab(tabname)
+     {
+
+      for(tablink of tablinks) {
+       tablink.classList.remove("active-link");
+      }
+     
+      for(tabcontent of tabcontents) {
+       tabcontent.classList.remove("active-tab");
+     }
+     event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+
+  }
+</script>
+    </body> 
+
+ </html>
